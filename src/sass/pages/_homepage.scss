@@ -3,3 +3,42 @@
 body {
 	background-color: colors.$white;
 }
+
+.hero {
+	&-section__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 25px;
+
+		img {
+			width: 100%;
+			border-radius: 15px;
+		}
+	}
+
+	&__content {
+		padding: 50px 50px 20px 50px;
+	}
+
+	&__sup-title {
+		margin: 0;
+	}
+
+	&__title {
+		margin: 0;
+		padding: 10px 0;
+	}
+}
+
+.text-bubble {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
