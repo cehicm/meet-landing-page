@@ -15,6 +15,12 @@ body {
 .hero__title,
 .footer__title {
 	font-size: 32px;
+	line-height: 36px;
+
+	@include sc-breakpoint(768) {
+		font-size: 40px;
+		line-height: 44px;
+	}
 }
 
 .header__text,
