@@ -41,4 +41,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	transform: translateY(30px);
+	z-index: 2;
+
+	.bubble__number {
+		background-color: colors.$white;
+	}
 }
