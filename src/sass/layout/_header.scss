@@ -8,7 +8,6 @@
 	text-align: center;
 	gap: 50px;
 	margin: 40px 0 80px 0;
-	// overflow: hidden;
 
 	&__content {
 		padding: 0 40px;
@@ -45,6 +44,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		gap: 40px;
 	}
 }
@@ -54,9 +54,6 @@
 		width: 100%;
 		height: auto;
 		min-height: 140px;
-		// // background-image: url("/src/images/tablet/image-hero.png");
-		// background-repeat: no-repeat;
-		// background-size: contain;
 
 		@include sc-breakpoint(1024) {
 			display: flex;
@@ -84,14 +81,12 @@
 
 	&__left {
 		@include sc-breakpoint(1024) {
-			background-color: pink;
 			background-image: url("/src/images/desktop/image-hero-left.png");
 		}
 	}
 
 	&__right {
 		@include sc-breakpoint(1024) {
-			background-color: purple;
 			background-image: url("/src/images/desktop/image-hero-right.png");
 		}
 	}
