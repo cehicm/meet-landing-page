@@ -9,7 +9,9 @@
 	</head>
 	<body>
 		<header class="header">
-			<img src="/src/images/logo.svg" alt="Meet logo" />
+			<div class="header__logo">
+				<img src="/src/images/logo.svg" alt="Meet logo" />
+			</div>
 
 			<div class="header__image-bubble">
 				<div class="image-bubble__left"></div>
@@ -17,8 +19,8 @@
 			</div>
 
 			<div class="header__text-content">
-				<h1>Group Chat for Everyone</h1>
-				<p>Group of user image bubbles</p>
+				<h1 class="header__title">Group Chat for Everyone</h1>
+				<p class="header__text">Group of user image bubbles</p>
 			</div>
 
 			<div class="header__buttons">
@@ -27,7 +29,8 @@
 			</div>
 
 			<div class="header__text-bubble">
-				<p>01</p>
+				<div class="bubble__line"></div>
+				<p class="bubble__number">01</p>
 			</div>
 		</header>
 
@@ -52,16 +55,17 @@
 					/>
 				</div>
 				<div class="hero__content">
-					<h2>BUILT FOR MODERN USE</h2>
-					<h3>Smarter meetings, all in one place</h3>
-					<p>
+					<h2 class="hero__sup-title">BUILT FOR MODERN USE</h2>
+					<h3 class="hero__title">Smarter meetings, all in one place</h3>
+					<p class="hero__text">
 						Send messages, share files, show your screen, and record your
 						meetings — all in one workspace. Control who can join with
 						invite-only team access, data encryption, and data export.
 					</p>
 				</div>
 				<div class="hero__number-pin">
-					<p>02</p>
+					<div class="bubble__line"></div>
+					<p class="bubble__number">02</p>
 				</div>
 			</div>
 		</section>
@@ -72,7 +76,7 @@
 				Stay connected with reliable HD meetings and unlimited one-on-one and
 				group video sessions.
 			</p>
-			<button class="button--purple">Download <span>v1.3</span></button>
+			<button class="button button--purple">Download <span>v1.3</span></button>
 		</footer>
 		<script src="/dist/scripts/app.js"></script>
 	</body>

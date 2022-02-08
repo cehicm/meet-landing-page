@@ -33,16 +33,141 @@ body {
   /* Legacy iOS */
 }
 .button {
+  height: 55px;
   padding: 15px 20px;
   border-radius: 25px;
   border: none;
   color: #fafafa;
 }
+.button--blue {
+  background-color: #4d96a9;
+}
+.button--blue span {
+  color: #8fe3f9;
+}
+.button--purple {
+  background-color: #855fb1;
+}
+.button--purple span {
+  color: #d9b8ff;
+}
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+.header__image-bubble {
+  display: flex;
+}
+.header__content {
+  padding: 0 40px 20px 40px;
+}
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__buttons .button--blue {
+  width: 200px;
+  margin-bottom: 15px;
+}
+.header__buttons .button--purple {
+  width: 140px;
+}
+.header__text-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.image-bubble {
+  height: 170px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.image-bubble__container {
+  display: flex;
+}
 .image-bubble__left {
   background-image: url("/src/images/desktop/image-hero-left.png");
 }
-
 .image-bubble__right {
   background-image: url("/src/images/desktop/image-hero-right.png");
+}
+
+.bubble__line {
+  height: 80px;
+  width: 1px;
+  background-color: #dfdfdf;
+}
+.bubble__number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 50%;
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+.header__title,
+.hero__title,
+.footer__title {
+  font-weight: 900;
+}
+
+.hero__title,
+.footer__title {
+  font-size: 32px;
+}
+
+.header__text,
+.hero__text,
+.footer__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.header__text,
+.hero__text {
+  color: #87879d;
+}
+
+.button,
+.hero__sup-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header__title {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.hero__sup-title {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  color: #4d96a9;
+}
+
+.bubble-number {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+body {
+  background-color: #fafafa;
 }

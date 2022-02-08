@@ -2,8 +2,23 @@
 @import "../variables/breakpoints";
 
 .button {
+	height: 55px;
 	padding: 15px 20px;
 	border-radius: 25px;
 	border: none;
 	color: colors.$white;
+
+	&--blue {
+		background-color: colors.$tiffany-blue;
+		span {
+			color: colors.$tirquoise-blue;
+		}
+	}
+
+	&--purple {
+		background-color: colors.$dark-purple;
+		span {
+			color: colors.$light-purple;
+		}
+	}
 }

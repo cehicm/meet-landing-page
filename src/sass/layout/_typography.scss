@@ -1,3 +1,57 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
 body {
 	font-family: "Red Hat Display";
+}
+
+//Shared styles for titles
+.header__title,
+.hero__title,
+.footer__title {
+	font-weight: 900;
+}
+
+.hero__title,
+.footer__title {
+	font-size: 32px;
+}
+
+.header__text,
+.hero__text,
+.footer__text {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+}
+
+.header__text,
+.hero__text {
+	color: colors.$gray;
+}
+
+.button,
+.hero__sup-title {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+// Header
+.header__title {
+	font-size: 40px;
+	line-height: 44px;
+}
+
+// Hero
+.hero__sup-title {
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 4px;
+	color: colors.$tiffany-blue;
+}
+
+//Components
+.bubble-number {
+	font-size: 16px;
+	line-height: 26px;
 }
