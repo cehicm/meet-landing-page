@@ -32,6 +32,17 @@ body {
   src: local(""), url("/dist/fonts/red-hat-display-v11-latin/red-hat-display-v11-latin-900.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/red-hat-display-v11-latin/red-hat-display-v11-latin-900.woff2") format("woff2"), url("/dist/fonts/red-hat-display-v11-latin/red-hat-display-v11-latin-900.woff") format("woff"), url("/dist/fonts/red-hat-display-v11-latin/red-hat-display-v11-latin-900.ttf") format("truetype"), url("/dist/fonts/red-hat-display-v11-latin/red-hat-display-v11-latin-900.svg#RedHatDisplay") format("svg");
   /* Legacy iOS */
 }
-body {
-  font-family: "Red Hat Display";
+.button {
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+  color: #fafafa;
+}
+
+.image-bubble__left {
+  background-image: url("/src/images/desktop/image-hero-left.png");
+}
+
+.image-bubble__right {
+  background-image: url("/src/images/desktop/image-hero-right.png");
 }
