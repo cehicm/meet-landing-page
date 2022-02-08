@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	background-image: url("/src/images/mobile/image-footer.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -16,8 +17,10 @@
 		background-image: url("/src/images/tablet/image-footer.jpg");
 	}
 	@include sc-breakpoint(1024) {
+		height: 300px;
 		background-image: url("/src/images/desktop/image-footer.jpg");
 	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -37,10 +40,38 @@
 		gap: 40px;
 		padding: 0 50px;
 		text-align: center;
+
+		@include sc-breakpoint(1024) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-content: center;
+			text-align: left;
+		}
 	}
 
 	&__title,
 	&__text {
 		margin: 0;
+	}
+
+	&__text {
+		@include sc-breakpoint(1024) {
+			padding: 0 20px;
+		}
+	}
+
+	.button--purple {
+		&:hover {
+			background-color: colors.$light-purple;
+		}
+
+		@include sc-breakpoint(540) {
+			width: 30%;
+		}
+
+		@include sc-breakpoint(1024) {
+			width: 50%;
+			justify-self: center;
+		}
 	}
 }

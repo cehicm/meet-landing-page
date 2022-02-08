@@ -19,7 +19,6 @@ body {
 
 	@include sc-breakpoint(768) {
 		font-size: 40px;
-		line-height: 44px;
 	}
 }
 
@@ -29,6 +28,10 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 26px;
+
+	@include sc-breakpoint(1024) {
+		font-size: 18px;
+	}
 }
 
 .header__text,
@@ -46,6 +49,11 @@ body {
 .header__title {
 	font-size: 40px;
 	line-height: 44px;
+
+	@include sc-breakpoint(1024) {
+		font-size: 64px;
+		line-height: 64px;
+	}
 }
 
 //Footer
@@ -62,7 +70,11 @@ body {
 }
 
 //Components
-.bubble-number {
+.bubble__number {
 	font-size: 16px;
 	line-height: 26px;
+
+	&:hover {
+		filter: drop-shadow(2px 4px 6px colors.$black);
+	}
 }
