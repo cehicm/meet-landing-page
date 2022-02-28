@@ -49,11 +49,7 @@ body {
 		padding: 20px 0;
 
 		@include sc-breakpoint(425) {
-			padding: 5% 9%;
-		}
-
-		@include sc-breakpoint(1400) {
-			padding: 5% 15%;
+			padding: 5% 10%;
 		}
 	}
 
@@ -62,25 +58,13 @@ body {
 	}
 
 	&__title {
+		margin-top: 0;
 		padding-top: 15px;
-
-		@include sc-breakpoint(480) {
-			max-width: 75%;
-		}
-
-		@include sc-breakpoint(1024) {
-			max-width: 55%;
-		}
-
-		@include sc-breakpoint(1024) {
-			max-width: 45%;
-		}
+		max-width: 440px;
 	}
 
 	&__text {
-		@include sc-breakpoint(1024) {
-			padding: 0 10%;
-		}
+		max-width: 520px;
 	}
 }
 
