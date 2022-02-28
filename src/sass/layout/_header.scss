@@ -66,10 +66,9 @@
 
 	&__text-bubble {
 		@include sc-breakpoint(1024) {
-			position: absolute;
-			top: 50%;
-			right: 50%;
-			transform: translate(50%, 200%);
+			grid-row: 3;
+			grid-column: 1/-1;
+			margin: 0 auto;
 		}
 	}
 

@@ -129,10 +129,9 @@ button:hover {
 }
 @media (min-width: 1024px) {
   .header__text-bubble {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, 200%);
+    grid-row: 3;
+    grid-column: 1/-1;
+    margin: 0 auto;
   }
 }
 .header__buttons {
@@ -397,9 +396,6 @@ body {
   font-size: 16px;
   line-height: 26px;
 }
-.bubble__number:hover {
-  filter: drop-shadow(2px 4px 6px #28283d);
-}
 
 body {
   background-color: #fafafa;
@@ -408,16 +404,6 @@ body {
 .hero-section {
   margin-top: 15%;
   padding: 0 20px;
-}
-@media (min-width: 1024px) {
-  .hero-section {
-    margin-top: 25%;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-section {
-    margin-top: 20%;
-  }
 }
 .hero-section .text-bubble {
   transform: translateY(30px);
