@@ -12,6 +12,10 @@
 		width: 200px;
 		background-color: colors.$tiffany-blue;
 
+		&:hover {
+			background-color: colors.$blue-button--hover;
+		}
+
 		span {
 			color: colors.$tirquoise-blue;
 		}
@@ -20,6 +24,10 @@
 	&--purple {
 		width: 140px;
 		background-color: colors.$dark-purple;
+
+		&:hover {
+			background-color: colors.$purple-button--hover;
+		}
 
 		span {
 			color: colors.$light-purple;
