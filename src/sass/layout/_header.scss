@@ -8,6 +8,7 @@
 	text-align: center;
 	gap: 50px;
 	margin-top: 40px;
+	overflow: hidden;
 
 	@include sc-breakpoint(1024) {
 		position: relative;
@@ -140,6 +141,7 @@
 	&__left {
 		@include sc-breakpoint(1024) {
 			left: 0;
+			transform: translateX(-25px);
 			background-image: url("/src/images/desktop/image-hero-left.png");
 		}
 	}
@@ -147,6 +149,7 @@
 	&__right {
 		@include sc-breakpoint(1024) {
 			right: 0;
+			transform: translateX(25px);
 			background-image: url("/src/images/desktop/image-hero-right.png");
 		}
 	}

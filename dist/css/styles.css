@@ -71,6 +71,7 @@ button:hover {
   text-align: center;
   gap: 50px;
   margin-top: 40px;
+  overflow: hidden;
 }
 @media (min-width: 1024px) {
   .header {
@@ -198,12 +199,14 @@ button:hover {
 @media (min-width: 1024px) {
   .image-bubble__left {
     left: 0;
+    transform: translateX(-25px);
     background-image: url("/src/images/desktop/image-hero-left.png");
   }
 }
 @media (min-width: 1024px) {
   .image-bubble__right {
     right: 0;
+    transform: translateX(25px);
     background-image: url("/src/images/desktop/image-hero-right.png");
   }
 }
