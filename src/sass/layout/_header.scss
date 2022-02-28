@@ -9,6 +9,7 @@
 	gap: 50px;
 	margin-top: 40px;
 	overflow: hidden;
+	max-width: 2000px;
 
 	@include sc-breakpoint(1024) {
 		position: relative;
@@ -16,6 +17,10 @@
 		grid-template-columns: repeat(12, 1fr);
 		justify-items: center;
 		align-items: flex-start;
+	}
+
+	@include sc-breakpoint(1820) {
+		margin: 0 auto;
 	}
 
 	&__logo {
